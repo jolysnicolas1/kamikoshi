@@ -17,14 +17,15 @@ const noto = Noto_Sans_JP({
 })
 export default function Home() {
   return (
-    <main className='flex min-h-screen max-h-screen flex-col items-center justify-between drop-shadow-lg relative'>
+    <main className='flex min-h-screen max-h-screen flex-col items-center justify-between drop-shadow-lg relative bg-black pt-24'>
       <h1 className="absolute top-[20%] left-[20%] text-[72px] text-red-100 drop-shadow-md { noto.className }">
         Kamikoshi studio
       </h1>
       <Image
         src={ mountains }
-        className='rounded-md'
-        layout='responsive'
+        alt='mountains'
+        width={1000}
+        height={1000}
       />
     </main>
   )
